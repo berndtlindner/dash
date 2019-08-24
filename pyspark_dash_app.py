@@ -1,15 +1,21 @@
 import dash
-import dash_table
 import dash_core_components as dcc
 import dash_html_components as html
-from dash.dependencies import Input, Output
+from dash.dependencies import Input, Output, State
+import dash_table
 import pandas as pd
+from pyspark.sql import SparkSession
 
 ### Generate the (pandas) data
 test_list = ['a', 'b', 'c', 'd']
 pdf = pd.DataFrame(test_list, columns=['letters'])
 
-### Some useful functions 
+
+### Create a spark session and convert the data to a spark dataframe
+
+spark = SparkSession.builder.appName('dash-app').getOrCreate()
+sdf = spark.createDataFrame(pdf)
+sdf.registerTempTable('temp_table')
 
 # Generate a more basic html table UI output
 # https://dash.plot.ly/getting-started
@@ -24,7 +30,7 @@ pdf = pd.DataFrame(test_list, columns=['letters'])
 #         ]) for i in range(min(len(dataframe), max_rows))]
 #     )
 
-# or rather use dash's more sleeky table UI output
+# Use dash's more sleeky table UI output
 def generate_dash_table(pdf):
     return dash_table.DataTable(
         id='table',
@@ -49,6 +55,9 @@ app.layout = html.Div([
         [Input(component_id='rows-limit', component_property='value')]
 )
 def update_info_table(input_value):
+    sdf = spark.sql("select * from temp_table")
+    pdf = sdf.toPandas()
+    
     if input_value == '':
         pdf_show = pdf
     else:
