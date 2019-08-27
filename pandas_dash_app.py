@@ -11,19 +11,6 @@ pdf = pd.DataFrame(test_list, columns=['letters'])
 
 ### Some useful functions 
 
-# Generate a more basic html table UI output
-# https://dash.plot.ly/getting-started
-# def generate_table(dataframe, max_rows=10):
-#     return html.Table(
-#         # Header
-#         [html.Tr([html.Th(col) for col in dataframe.columns])] +
-
-#         # Body
-#         [html.Tr([
-#             html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
-#         ]) for i in range(min(len(dataframe), max_rows))]
-#     )
-
 # or rather use dash's more sleeky table UI output
 def generate_dash_table(pdf):
     return dash_table.DataTable(
