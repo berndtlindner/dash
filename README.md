@@ -10,10 +10,13 @@ Examples for using http://dash.plot.ly/
 
 My main issue with Dash (as compared to Shiny) is is it difficult to _share data between callbacks_
 > In order to share data safely across multiple python processes, we need to store the data somewhere that is accessible to each of the processes. There are three main places to store this data:  
-> 1 - In the user's browser session  
-> 2 - On the disk (e.g. on a file or on a new database)  
-> 3 - In a shared memory space like with Redis  
-[sharing-data-between-callbacks](https://dash.plot.ly/sharing-data-between-callbacks)
+1 - In the user's browser session  
+2 - On the disk (e.g. on a file or on a new database)  
+3 - In a shared memory space like with Redis  
+[sharing-data-between-callbacks](https://dash.plot.ly/sharing-data-between-callbacks)  
+
+> This is where Shiny is miles ahead of Dash 
+[[shiny-vs-dash-a-side-by-side-comparison](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)].
 
 # R
 ## Shiny
