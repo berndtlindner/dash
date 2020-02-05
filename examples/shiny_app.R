@@ -13,6 +13,7 @@ ui <- dashboardPage(
     fluidRow(
       selectInput(inputId="species", label="Species", choices = levels(iris$Species),
                   selected=levels(iris$Species), multiple = TRUE),
+      # actionButton("go", "Go"),
       DT::dataTableOutput("mytable"), # https://shiny.rstudio.com/articles/datatables.html
       # plotOutput("plot1", width=1000),
       plotlyOutput("plot2", width=1000)
@@ -22,8 +23,13 @@ ui <- dashboardPage(
 
 server <- function(input, output) {
   
+  # user_iris <- eventReactive(input$go,{
+  #   iris %>% 
+  #     filter(Species %in% input$species)
+  # })
+  
   user_iris <- reactive({
-    iris %>% 
+    iris %>%
       filter(Species %in% input$species)
   })
 
