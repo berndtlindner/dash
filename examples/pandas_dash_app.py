@@ -67,8 +67,9 @@ def update_info_table(input_value):
         [Input(component_id='demo-dropdown', component_property='value')]
     )
 def make_figure(input_value):
+    pdf_show = pdf[pdf.Species.isin(input_value)]
     return px.scatter(
-        pdf[pdf.Species.isin(input_value)],
+        pdf_show,
         x="Sepal Length",
         y="Sepal Width",
         color="Species",
