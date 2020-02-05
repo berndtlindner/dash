@@ -4,6 +4,14 @@ The two dominant data science programming languages scoped in this project are `
 # Python
 
 # Bokeh
+![](img/bokeh_serve.svg)  
+[Bokeh widgets](https://docs.bokeh.org/en/latest/docs/user_guide/interaction/widgets.html)  
+[Bokeh for notebooks](https://github.com/bokeh/bokeh/blob/1.4.0/examples/howto/notebook_comms/Jupyter%20Interactors.ipynb)  
+[bokeh plot for (geo)pandas](https://pythonawesome.com/bokeh-plotting-backend-for-pandas-and-geopandas/)  
+
+Only bokeh (no plotly/matplotlib)?  
+https://stackoverflow.com/questions/44499971/importerror-cannot-import-name-mpl-from-matplotlib-import-mpl
+https://github.com/bokeh/bokeh/issues/2277  
 
 ## Dash
 [getting started](https://dash.plot.ly/getting-started)  
@@ -20,6 +28,9 @@ My main issue with Dash (as compared to Shiny) is is it difficult to _share data
 > This is where Shiny is miles ahead of Dash 
 [[shiny-vs-dash-a-side-by-side-comparison](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)].
 
+Plotly offline?
+https://community.plot.ly/t/offline-dash-application/6017
+
 # R
 ## Shiny
 Shiny is by leaps and bounds the most popular web application framework for R [shiny-vs-dash-a-side-by-side-comparison](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)
@@ -30,6 +41,9 @@ Shiny is by leaps and bounds the most popular web application framework for R [s
 ## Dash
 It looks like [DASH HAS GONE FULL R](https://moderndata.plot.ly/dash-has-gone-full-r/)
 
+
+## Panel
+https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
 
 ## flexdashboard
 [flexdashboard-easy-interactive-dashboards-for-r](https://blog.rstudio.com/2016/05/17/flexdashboard-easy-interactive-dashboards-for-r/)
@@ -47,10 +61,16 @@ Other noteworthy tools include:
 
 # Comparisons
 
+
+
 # Examples
 [examples](/examples)
 
 # Other worthy blogs  
 https://www.quora.com/Is-there-something-similar-to-R-Shiny-for-Python-users-in-the-scientific-community  
 https://www.sicara.ai/blog/2018-01-30-bokeh-dash-best-dashboard-framework-python  
-
+https://github.com/flavianh/dashboards-frameworks-comparison  
+https://medium.com/y-data-stories/python-and-bokeh-part-ii-d81024c9578f  
+https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-getting-started-a11655a467d4  
+https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-iii-a-complete-dashboard-dc6a86aa6e23  
+https://towardsdatascience.com/creating-interactive-dashboards-in-r-shiny-using-python-scripts-as-the-backend-aed40e18fb3f
