@@ -31,19 +31,25 @@ My main issue with Dash (as compared to Shiny) is is it difficult to _share data
 Plotly offline?
 https://community.plot.ly/t/offline-dash-application/6017
 
+
+[Dash: build-your-own-data-dashboard](https://towardsdatascience.com/build-your-own-data-dashboard-93e4848a0dcf)
+
+## Panel
+https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
+
 # R
 ## Shiny
 Shiny is by leaps and bounds the most popular web application framework for R [shiny-vs-dash-a-side-by-side-comparison](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)
 
-[shinydashboard](https://rstudio.github.io/shinydashboard/) 
-[Shiny: interactive chart packages](https://beta.rstudioconnect.com/content/2792/Interactive%20Dashboards%20Shiny.nb.html) 
-[DataTable options](https://rstudio.github.io/DT/options.html)
+[Shiny basics](https://shawnsanto.com/files/sta523/slides/lec-8b-shiny1.html#16)  
+
+[shinydashboard](https://rstudio.github.io/shinydashboard/)  
+[Shiny: interactive chart packages](https://beta.rstudioconnect.com/content/2792/Interactive%20Dashboards%20Shiny.nb.html)  
+[DataTable options](https://rstudio.github.io/DT/options.html)  
+[Shiny simple button](https://shiny.rstudio.com/articles/action-buttons.html)
+
 ## Dash
-It looks like [DASH HAS GONE FULL R](https://moderndata.plot.ly/dash-has-gone-full-r/)
-
-
-## Panel
-https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
+It looks like [Dash has gone full R](https://moderndata.plot.ly/dash-has-gone-full-r/)
 
 ## flexdashboard
 [flexdashboard-easy-interactive-dashboards-for-r](https://blog.rstudio.com/2016/05/17/flexdashboard-easy-interactive-dashboards-for-r/)
@@ -56,12 +62,13 @@ Other noteworthy tools include:
 - [Rise: turn notebook into a live reveal.js-based presentation](https://rise.readthedocs.io/en/maint-5.6/)
 - [nbextensions: hide_input/](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/hide_input/readme.html)
 - [jupyterbook: hiding](https://jupyterbook.org/features/hiding.html)
+- [jupyter initial cells to run](https://jupyter-contrib-nbextensions.readthedocs.io/en/latest/nbextensions/init_cell/README.html)
+- [widget run cells below](https://stackoverflow.com/questions/32714783/ipython-run-all-cells-below-from-a-widget)
 
-[nbinteract](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-57.pdf)
+[nbinteract](https://www2.eecs.berkeley.edu/Pubs/TechRpts/2018/EECS-2018-57.pdf)  
+[nbviewer](https://github.com/jupyter/nbviewer)
 
 # Comparisons
-
-
 
 # Examples
 [examples](/examples)
@@ -74,3 +81,4 @@ https://medium.com/y-data-stories/python-and-bokeh-part-ii-d81024c9578f
 https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-one-getting-started-a11655a467d4  
 https://towardsdatascience.com/data-visualization-with-bokeh-in-python-part-iii-a-complete-dashboard-dc6a86aa6e23  
 https://towardsdatascience.com/creating-interactive-dashboards-in-r-shiny-using-python-scripts-as-the-backend-aed40e18fb3f
+https://www.slideshare.net/vladimirkazantsev/plotly-dash-and-data-visualisation-in-python  
