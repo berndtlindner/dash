@@ -1,13 +1,38 @@
 
 The two dominant data science programming languages scoped in this project are `python` and `R`
 
+- [Python](#python)
+  - [Bokeh](#bokeh)
+    - [Run a bokeh server](#run-a-bokeh-server)
+  - [Dash](#dash)
+  - [Panel](#panel)
+- [R](#r)
+  - [Shiny](#shiny)
+    - [Reactive expressions!](#reactive-expressions)
+    - [Deploy server](#deploy-server)
+  - [Dash](#dash-1)
+  - [flexdashboard](#flexdashboard)
+- [Jupyter notebooks interactive widgets](#jupyter-notebooks-interactive-widgets)
+- [Comparisons](#comparisons)
+- [Examples](#examples)
+- [Related blogs](#related-blogs)
+
+
 # Python
 
-# Bokeh
-![](img/bokeh_serve.svg)  
+## Bokeh
+
+![](img/continuum-analytics-and-python-40-638.jpg) 
+![](img/hassle-free-data-science-apps-with-bokeh-webinar-21-638.jpg)
+
 [Bokeh widgets](https://docs.bokeh.org/en/latest/docs/user_guide/interaction/widgets.html)  
 [Bokeh for notebooks](https://github.com/bokeh/bokeh/blob/1.4.0/examples/howto/notebook_comms/Jupyter%20Interactors.ipynb)  
 [bokeh plot for (geo)pandas](https://pythonawesome.com/bokeh-plotting-backend-for-pandas-and-geopandas/)  
+
+### Run a bokeh server
+[Bokeh server user guide](https://docs.bokeh.org/en/latest/docs/user_guide/server.html)
+![](img/bokeh_serve.svg)  
+
 
 Only bokeh (no plotly/matplotlib)?  
 https://stackoverflow.com/questions/44499971/importerror-cannot-import-name-mpl-from-matplotlib-import-mpl
@@ -16,6 +41,9 @@ https://github.com/bokeh/bokeh/issues/2277
 ## Dash
 [getting started](https://dash.plot.ly/getting-started)  
 Examples for using http://dash.plot.ly/
+
+![](img/plotly-dash-and-data-visualisation-in-python-5-638.jpg)
+![](img/plotly-dash-and-data-visualisation-in-python-14-638.jpg)
 
 My main issue with Dash (as compared to Shiny) is is it difficult to _share data between callbacks_
 > In order to share data safely across multiple python processes, we need to store the data somewhere that is accessible to each of the processes. There are three main places to store this data:  
@@ -41,12 +69,23 @@ https://medium.com/@philipp.jfr/panel-announcement-2107c2b15f52
 ## Shiny
 Shiny is by leaps and bounds the most popular web application framework for R [shiny-vs-dash-a-side-by-side-comparison](https://www.rkingdc.com/blog/2019/3/6/shiny-vs-dash-a-side-by-side-comparison)
 
+![](img/shiny_server.png)
+![](img/shiny-architecture.png)
+
 [Shiny basics](https://shawnsanto.com/files/sta523/slides/lec-8b-shiny1.html#16)  
 
 [shinydashboard](https://rstudio.github.io/shinydashboard/)  
 [Shiny: interactive chart packages](https://beta.rstudioconnect.com/content/2792/Interactive%20Dashboards%20Shiny.nb.html)  
 [DataTable options](https://rstudio.github.io/DT/options.html)  
 [Shiny simple button](https://shiny.rstudio.com/articles/action-buttons.html)
+
+### Reactive expressions!
+This is what makes shiny awesome!
+![](img/N66Xv.png)
+
+### Deploy server
+![](img/shiny_architecture2.png)
+![](img/shiny_possible_architectures.png)
 
 ## Dash
 It looks like [Dash has gone full R](https://moderndata.plot.ly/dash-has-gone-full-r/)
@@ -69,11 +108,12 @@ Other noteworthy tools include:
 [nbviewer](https://github.com/jupyter/nbviewer)
 
 # Comparisons
+![](/img/plotly-dash-and-data-visualisation-in-python-16-638.jpg)
 
 # Examples
 [examples](/examples)
 
-# Other worthy blogs  
+# Related blogs  
 https://www.quora.com/Is-there-something-similar-to-R-Shiny-for-Python-users-in-the-scientific-community  
 https://www.sicara.ai/blog/2018-01-30-bokeh-dash-best-dashboard-framework-python  
 https://github.com/flavianh/dashboards-frameworks-comparison  
